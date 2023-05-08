@@ -1,0 +1,63 @@
+{
+  "layer": "top",
+  "modules-left": ["wlr/workspaces"],
+  "modules-center": [],
+  "modules-right": ["network", "temperature", "cpu", "memory", "pulseaudio", "battery", "clock"],
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "focused": "",
+      "default": ""
+    },
+    "sort-by-number": true,
+    "on-click": "activate",
+    "active-only": true
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "temperature": {
+    "format": "{icon} {temperatureF} °F",
+      "format-icons": ["", "", ""]
+  },
+  "pulseaudio": {
+    "scroll-step": 1,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": " {volume}%",
+    "format-bluetooth-muted": " 0%",
+    "format-muted": " 0%",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "וֹ",
+      "headset": "󰋎",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
+  },
+	"network": {
+		"tooltip": false,
+		"format-wifi": "  {essid}",
+		"format-ethernet": "󰈀 {ipaddr}"
+	},
+	"cpu": {
+		"tooltip": false,
+		"format": "󰻠 {}%"
+	},
+	"memory": {
+		"tooltip": false,
+		"format": "󰍛 {}%"
+	}
+}
+
