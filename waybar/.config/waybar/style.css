@@ -25,145 +25,139 @@ window#waybar.hidden {
 }
 
 #window {
-    margin-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-	border-radius: 26px;
-	transition: none;
-	/*
-    color: #f8f8f2;
-	background: #282a36;
-    */
-    color: transparent;
-	background: transparent;
+  margin-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 26px;
+  transition: none;
+  color: transparent;
+  background: transparent;
 }
 
 window#waybar.termite #window,
 window#waybar.Firefox #window,
 window#waybar.Navigator #window,
 window#waybar.PCSX2 #window {
-    color: #4d4d4d;
-	background: #e6e6e6;
+  color: #212724;
+  background: #e6e6e6;
 }
 
+/* Background Color */
+/* #212724 */
+
+/* Text Color */
+/* #93545f */
+
 #workspaces {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-  color: #e5e9f0;
-  background: #4c566a;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #workspaces button {
-  color: #e5e9f0;
+  color: #93545f;
 }
 
 #network {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-	/* background: #bd93f9; */
-  background: #b48ead;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #pulseaudio {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-  /* background: #9aedfe; */
-  background: #5e81ac;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #tray {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-  /* background: #ff6e67; */
-  background: #bf616a;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #temperature {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-  /* background: #5af78e; */
-  background: #a3be8c;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #cpu {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-  /* background: #f1fa8c; */
-  background: #ebcb8b;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #memory {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-  /* background: #ff6e67; */
-  background: #d08770;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #battery {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-  color: #e5e9f0;
-  /* background: #282a36; */
-  background: #3b4252;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
 #clock {
-	margin-top: 8px;
-	margin-left: 8px;
-	margin-right: 12px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-  color: #e5e9f0;
-  /* background: #282a36; */
-  background: #3b4252;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #93545f;
+  background: #212724;
 }
 
