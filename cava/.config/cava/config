@@ -145,13 +145,21 @@
 
 gradient = 1
 
-gradient_color_1 = '#e43447'
-gradient_color_2 = '#93545f'
-gradient_color_3 = '#cea4bd'
-gradient_color_4 = '#e43447'
-gradient_color_5 = '#93545f'
+gradient_color_1 = '#595FBF'
+gradient_color_2 = '#6067CC'
+gradient_color_3 = '#4E54A6'
+gradient_color_4 = '#3C4080'
+gradient_color_5 = '#1E2040'
 gradient_color_6 = '#cea4bd'
 gradient_color_7 = '#e43447'
+
+# gradient_color_1 = '#e43447'
+# gradient_color_2 = '#93545f'
+# gradient_color_3 = '#cea4bd'
+# gradient_color_4 = '#e43447'
+# gradient_color_5 = '#93545f'
+# gradient_color_6 = '#cea4bd'
+# gradient_color_7 = '#e43447'
 
 [smoothing]
 

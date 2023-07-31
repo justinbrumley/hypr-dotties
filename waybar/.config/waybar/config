@@ -1,63 +1,107 @@
 {
   "layer": "top",
-  "modules-left": ["wlr/workspaces"],
-  "modules-center": [],
-  "modules-right": ["network", "temperature", "cpu", "memory", "pulseaudio", "battery", "clock"],
-  "wlr/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "focused": "",
-      "default": ""
-    },
-    "sort-by-number": true,
-    "on-click": "activate",
-    "active-only": true
-  },
-  "battery": {
-    "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", ""]
-  },
-  "temperature": {
-    "format": "{icon} {temperatureF} °F",
-      "format-icons": ["", "", ""]
-  },
-  "pulseaudio": {
-    "scroll-step": 1,
-    "format": "{icon} {volume}%",
-    "format-bluetooth": " {volume}%",
-    "format-bluetooth-muted": " 0%",
-    "format-muted": " 0%",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "וֹ",
-      "headset": "󰋎",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [""]
-    },
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
-  },
-	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": "󰈀 {ipaddr}"
-	},
-	"cpu": {
-		"tooltip": false,
-		"format": "󰻠 {}%"
-	},
-	"memory": {
-		"tooltip": false,
-		"format": "󰍛 {}%"
-	}
-}
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": [],
+    "modules-right": ["custom/spotify", "tray", "network", "temperature", "cpu", "memory", "wireplumber", "clock"],
 
+    "custom/spotify": {
+      "exec": "/usr/bin/python3 /home/justin/.config/waybar/mediaplayer.py --player spotify",
+      "format": "{}  ",
+      "return-type": "json",
+      "on-click": "playerctl play-pause",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
+    },
+
+    "wlr/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+
+        "focused": "",
+        "default": ""
+      },
+      "sort-by-number": true,
+      "on-click": "activate",
+      "all-outputs": true,
+      "active-only": true
+    },
+
+    "hyprland/window": {
+      "separate-outputs": true
+    },
+
+    "tray": {
+      "spacing": 10
+    },
+
+    "temperature": {
+      "format": "{icon} {temperatureF} °F",
+      "format-icons": ["", "", ""]
+    },
+
+    "wireplumber": {
+      "scroll-step": 1,
+      "format": "{icon} {volume}%",
+      "format-muted": " 0%",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "וֹ",
+        "headset": "󰋎",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": [""]
+      },
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "on-click-right": "kitty",
+      "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+",
+      "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
+    },
+
+    "pulseaudio": {
+      "scroll-step": 1,
+      "format": "{icon} {volume}%",
+      "format-bluetooth": " {volume}%",
+      "format-bluetooth-muted": " 0%",
+      "format-muted": " 0%",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "וֹ",
+        "headset": "󰋎",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": [""]
+      },
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click-right": "pavucontrol",
+      "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
+    },
+
+    "network": {
+      "tooltip": false,
+      "format-wifi": "  {essid}",
+      "format-ethernet": "󰈀 {ipaddr}"
+    },
+
+    "cpu": {
+      "tooltip": false,
+      "format": "󰻠 {}%"
+    },
+
+    "memory": {
+      "tooltip": false,
+      "format": "󰍛 {}%"
+    }
+}

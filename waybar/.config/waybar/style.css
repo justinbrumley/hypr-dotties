@@ -12,8 +12,8 @@
 	border: none;
 	border-radius: 0;
 	font-family: Fira Code;
-	font-size: 14px;
-	min-height: 24px;
+	font-size: 16px;
+	min-height: 22px;
 }
 
 window#waybar {
@@ -38,17 +38,33 @@ window#waybar.termite #window,
 window#waybar.Firefox #window,
 window#waybar.Navigator #window,
 window#waybar.PCSX2 #window {
-  color: #212724;
+  color: #30383b;
   background: #e6e6e6;
 }
 
 /* Background Color */
-/* #212724 */
+/* #30383b */
 
 /* Text Color */
-/* #93545f */
+/* #a4b8cf */
 
 #workspaces {
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 14px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #a4b8cf;
+  background: #30383b;
+}
+
+#workspaces button {
+  color: #a4b8cf;
+}
+
+#window {
   margin-top: 8px;
   margin-left: 8px;
   padding-left: 16px;
@@ -56,27 +72,32 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
+  font-size: 14px;
 }
 
-#workspaces button {
-  color: #93545f;
+#window.empty {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
 }
 
 #network {
   margin-top: 8px;
   margin-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
-#pulseaudio {
+#pulseaudio, #wireplumber {
   margin-top: 8px;
   margin-left: 8px;
   padding-left: 16px;
@@ -84,8 +105,20 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
+}
+
+#custom-spotify {
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
 #tray {
@@ -96,8 +129,8 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
 #temperature {
@@ -108,8 +141,8 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
 #cpu {
@@ -120,8 +153,8 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
 #memory {
@@ -132,20 +165,8 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
-}
-
-#battery {
-  margin-top: 8px;
-  margin-left: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 0;
-  border-radius: 26px;
-  transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
 #clock {
@@ -157,7 +178,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #93545f;
-  background: #212724;
+  color: #a4b8cf;
+  background: #30383b;
 }
 
