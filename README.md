@@ -1,5 +1,10 @@
 # Hyprland Dotfiles
 
+## Screenshots
+
+![rice-combined](https://github.com/justinbrumley/hypr-dotties/assets/7034681/9d2b51e3-6260-4b32-850b-f4ff19008c41)
+
+
 ## Base Dependencies
 
 - `wayland`
