@@ -2,7 +2,13 @@
   "layer": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["custom/spotify", "tray", "network", "temperature", "cpu", "memory", "wireplumber", "clock"],
+    "modules-right": ["custom/spotify", "custom/controller", "tray", "network", "temperature", "cpu", "memory", "wireplumber", "clock"],
+
+    "custom/controller": {
+      "exec": "/home/justin/go/src/github.com/justinbrumley/waybar-controller-battery/waybar-controller-battery",
+      "format": " {}",
+      "return-type": "json"
+    },
 
     "custom/spotify": {
       "exec": "/usr/bin/python3 /home/justin/.config/waybar/mediaplayer.py --player spotify",

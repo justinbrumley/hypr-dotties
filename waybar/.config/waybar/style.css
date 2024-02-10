@@ -18,6 +18,7 @@
 
 window#waybar {
 	background: transparent;
+  opacity: 0.8;
 }
 
 window#waybar.hidden {
@@ -46,7 +47,7 @@ window#waybar.PCSX2 #window {
 /* #30383b */
 
 /* Text Color */
-/* #a4b8cf */
+/* #777a7c */
 
 #workspaces {
   margin-top: 8px;
@@ -56,12 +57,12 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
 #workspaces button {
-  color: #a4b8cf;
+  color: #777a7c;
 }
 
 #window {
@@ -72,7 +73,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
   font-size: 14px;
 }
@@ -93,7 +94,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -105,7 +106,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -117,7 +118,19 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
+  background: #30383b;
+}
+
+#custom-controller {
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 0;
+  border-radius: 26px;
+  transition: none;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -129,7 +142,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -141,7 +154,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -153,7 +166,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -165,7 +178,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
@@ -178,7 +191,7 @@ window#waybar.PCSX2 #window {
   margin-bottom: 0;
   border-radius: 26px;
   transition: none;
-  color: #a4b8cf;
+  color: #777a7c;
   background: #30383b;
 }
 
